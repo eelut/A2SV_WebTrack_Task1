@@ -101,3 +101,26 @@ button {
   font-weight: bold;
   outline: none;
 }
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  width: 100%;
+  list-style: none;
+}
+
+.taskItem {
+  display: flex;
+  background-color: var(--secondaryBackground);
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskItem img {
+  width: 24px;
+  height: 24px;
+}
