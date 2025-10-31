@@ -99,8 +99,8 @@ ul {
 }
 
 .taskItem input[type="checkbox"] {
-  -webkit-appearance: none;
   appearance: none;
+  -webkit-appearance: none;
   width: 20px;
   height: 20px;
   margin: 0;
@@ -132,27 +132,44 @@ ul {
   transform: scale(0.98);
 }
 
+.taskItem input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.taskItem input[type="checkbox"]:checked {
+  background: #333;
+  border-color: #333;
+}
+
 .taskItem input[type="checkbox"]::after {
   content: "";
-  width: 10px;
-  height: 6px;
-  border-left: 2px solid transparent;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  /* padding: 4px; */
+  border-right: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  transform: rotate(-45deg) scale(0.8);
+  transform: translate(-50%, -60%) rotate(45deg) scale(0.9);
   opacity: 0;
   transition: opacity 140ms ease, transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
   box-sizing: content-box;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
 }
 
 .taskItem input[type="checkbox"]:checked::after {
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  width: 8px;
-  height: 12px;
-  transform: rotate(-45deg) translateY(-1px) scale(1);
+  border-right-color: #fff;
+  border-bottom-color: #fff;
   opacity: 1;
+  transform: translate(-50%, -60%) rotate(45deg) scale(1);
 }
 
 @media (max-width: 600px) {
