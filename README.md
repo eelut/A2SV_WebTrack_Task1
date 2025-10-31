@@ -26,19 +26,20 @@ It allows users to add, edit, delete, and mark tasks as complete. All tasks are 
 ---
 
 ## Project Structure
+
 Todo/
-│
 ├── index.html
 ├── style.css
 ├── scripts/
-│ └── main.js 
+│   └── main.js
 ├── images/
-│ ├── edit.png
-│ ├── delete.png
-│ ├── screenshot1.png
-│ └── screenshot2.png
-├── .gitignore 
+│   ├── edit.png
+│   ├── delete.png
+│   ├── screenshot1.png
+│   └── screenshot2.png
+├── .gitignore
 └── README.md
+
 
 ## Screenshots
 ![Screenshot1](./images/Screenshot1.png)
